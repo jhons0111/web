@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>tittle</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 shrink-to-fit=no">
+
+		<!-- Estilos y fuentes -->
+		<link rel="stylesheet" href="css/estilos.css" type="text/css" media="all">
+
+		<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<!-- Jquery -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> 
+
+		 <!-- Mis scripts -->
+  		<script type="text/javascript" src="js/main.js"></script>
+
+
+		<!-- Fuentes -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:300,400,500,600" rel="stylesheet">
+
+		<!-- Iconos -->
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+		<!-- popper.js & Boostrap JS -->		
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<!-- Pagination.js -->
+
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+
+  		<!-- Rocket loader -->
+
+  		<link href="Rocket-Loader-master/css/loader.min.css" rel="stylesheet" type="text/css">
+  		
+
+
+	</head>
+	<body>
+		<section id="global">
+			<header>
+				<nav class="navbar navbar-expand-lg navbar-dark">
+      				<div class="container-fluid">
+						<a class="navbar-brand" href="/">
+						  <img src="img/logo.jpg" style="width: 20%;">
+						</a>
+				        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				          <span class="navbar-toggler-icon"></span>
+				        </button>
+				        <div class="collapse navbar-collapse" id="navbarNav">
+				          	<ul class="navbar-nav ml-auto">
+				            	<li class="nav-item">
+              						<a class="nav-link" href="index.html">Inicio</a>
+            					</li>
+            					<li class="nav-item">
+              						<a class="nav-link" href="nosotros.html">Nosotros</a>
+            					</li>
+            					<li class="nav-item">
+              						<a class="nav-link" href="productos.html">Productos</a>
+            					</li>
+            					<li class="nav-item">
+              						<a class="nav-link" href="contacto.html">Contactos</a>
+            					</li>
+				          	</ul>
+				        </div>
+				    </div>
+				</nav>			
+			</header>
+	<section id="global-productos">		
+	<div class="container">
+			<div class="row">
+				<div class="col-2 cont-tittleUno">
+					<span>Categorias</span>
+				</div>
+				<div class="col-10 cont-tittleDos">
+					<span>Todos los productos</span>
+					<span id="cantArticulos"></span>
+					<!-- document.getElementById("myspan").textContent="newtext"; -->
+				</div>
+			</div>
+	
+		<div class="row-100"></div>
+		<div id="">
+			<div class="row">
+				<div class="col-2" id="con-listado-principal">
+					<ol id="cont-listado">
+  						<li class="no-uno estilos-selector">Todos</li>
+  						<li class="no-dos estilos-selector">Visagras</li>
+  						<li class="no-tres estilos-selector">Enchapes</li>
+  						<li class="no-cuatro estilos-selector">Varandas</li>
+  						<li class="no-cinco estilos-selector">Vidrios de baño</li>
+					</ol>
+
+					<button id="button-productos">Buscar</button>
+				</div>
+        			<div class="data-container cont-list-productos col-10">
+        				<div id="contenedor-invitacion-productos">
+        					<span class="textoUno-invitacion-productos">Selecciona  &nbsp; =)</span>
+        					<span class="textoDos-invitacion-productos">ALGUNO DE LOS PRODUCTOS DE LA LISTA</span>
+        				</div>
+        			</div>
+        			<div id="pagination-productos" class=""></div>
+			</div>
+		</div>
+	</div>
+
+	</section>	
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row cont-footer">
+				<div class="col-3 element_foo">
+				<ul>
+					<li class="color_foo">Para ti</li>
+					<li>Divisiones</li>
+					<li>Instalaciones</li>
+					<li>Innovacion</li>
+				</ul>		
+				</div>
+				<div class="col-3 element_foo">
+				<ul>
+					<li><i class="fas fa-building"></i> &nbsp;  &nbsp; Carre 68 L BIS No 37D-35 Sur</li>
+					<li><i class="fas fa-phone" class="icon_cont"></i> &nbsp;  &nbsp; 7105704</li>
+					<li><i class="fas fa-mobile" class="icon_cont"></i> &nbsp;  &nbsp; 3127063989</li>
+					<li><i class="fas fa-envelope" class="icon_cont"></i> &nbsp;  &nbsp; jhons0111lagmail.com</li>
+				</ul>		
+				</div>
+				<div class="col-6 element_foo cont-footer-tres">
+					<span class="comilla comilla_one">“</span>				
+					<p class="parrafo_foo">
+					tu mejor aliado en el desarrollo de tus proyectos. 
+					Con nuestra experiencia te brindamos soluciones 
+					efectivas para todas tus necesidades.
+					</p>	
+					<span class="comilla comilla_two">”</span>			
+				</div>
+			</div>
+			<div class="w-100"></div>		
+		</div>
+		<div class="container-fluid">
+			<div class="row copyR">
+				<div class="col-6">
+					<span>© 2019 Procoal, Ltda.</span>
+				</div>
+				<div class="col-6 cont-footer-redesS">
+					<a href=""><i class="fab fa-facebook img-redesU"></i></a>
+					<a href=""><i class="fab fa-twitter-square img-redesD"></i></a>
+					<a href=""><i class="fab fa-instagram img-redesT"></i></a>
+				</div>
+			</div>
+		</div>
+		</footer>
+
+<!-- 	<i class="fab fa-mailchimp"></i>  micoo	 -->	
+		<script src="Rocket-Tools-master/js/tools.min.js"></script>
+   		<script src="Rocket-Loader-master/js/loader.min.js"></script>
+<body>
+</html>
