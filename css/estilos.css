@@ -21,35 +21,35 @@ azul #034078
 azul claro #1282A2
 blanco #FEFCFB*/
 
-			/* Vista inicial y pagina principal */
+            /* Vista inicial y pagina principal */
 body {
-	margin: 0;
-	width: 99vw !important; 
+    margin: 0;
+    width: 99vw !important; 
     background: #1B1B1E;
     font-family: 'Raleway Poppins', sans-serif;
     text-rendering: optimizelegibility;
 }
 
 header{
-	background: #1B1B1E !important;
+    background: #1B1B1E !important;
 }
 
 #global{
-	width: 100%;
-	display: inline-block;
+    width: 100%;
+    display: inline-block;
     background: white !important;
 }
 
  #logo{
-	display: inline-block;
-	width: 5vw;
-	height: 3vh;
-	float: left;
-	margin-left: 5vw;	
+    display: inline-block;
+    width: 5vw;
+    height: 3vh;
+    float: left;
+    margin-left: 5vw;   
 }
 
 #menu {
-	display: inline-block
+    display: inline-block
 }
 
 
@@ -58,21 +58,23 @@ header{
     padding: 1.3vh 7.5% 0 7.5% !important;
 }
 
-#navbarNav ul{
-	line-height: 3vh;
-    text-rendering: optimizeLegibility !important; 
-}
-
-#navbarNav ul li{
-    padding: 0vh 3.9% 1vh 3.9%;
+.nav-item{
+    margin: 0 3%;
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     color: #6D676E;
 }
+
+#navbarNav ul{
+    width: 43vh;
+    display: flex;
+    justify-content: center;
+}
+
 #navbarNav ul li a{
-	text-decoration: none !important;
-	color: #FBFFFE !important;
+    text-decoration: none !important;
+    color: #FBFFFE !important;
 }
 
 #navbarNav ul li a:hover{
@@ -94,7 +96,7 @@ header{
 }
 
 #slider{
-	display: inline-block;
+    display: inline-block;
     width: 99vw;
 }
 
@@ -113,20 +115,20 @@ header{
 }
 
 .bx-pager{
-    position: absolute;
-    padding: 0 45.8% 3% 47.4% !important;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5.5vh;
     width: 100% !important;
 }
 
 .bx-pager-link{    
-    width: 1.4rem !important;
-    height: 1.4rem !important;
-    border-radius: 50% !important;
-    opacity: 0.6;
+    width: 1.8rem!important;
+    height: 0.4rem !important;
+    opacity: 0.8;
 }
 
 #producto{
-	width: 55vw;
+    width: 55vw;
     margin: 0 auto!important;
     text-align: center;
     text-rendering: optimizeLegibility;
@@ -137,7 +139,7 @@ header{
 }
 
 #ascii{
-	margin: 0;
+    margin: 0;
 }
 
 h1{
@@ -149,37 +151,21 @@ h1{
 }
 
 h2{
-	padding: 1.5vh 0;
+    padding: 1.5vh 0;
     text-rendering: optimizeLegibility !important;
     font-size: 2rem !important;
     font-family: 'Poppins', sans-serif !important;
 }
 
-#f_abajo{
-    height: 7vh;
-    opacity: 0.7;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #6D676E;
-    width: 3.7vw;
-    margin: 0 auto;
-    padding-top: 1vh;
-}
-
-
 #f_arriba{
     visibility: hidden;
-    height: 6.5vh;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
     background: #6D676E;
-    width: 3.3vw;
     margin: 0 auto;
     position: fixed;
     top: 88vh;
     right: 2%;
-    padding: 0.7vh 0 0 0.55%;
     opacity: 0.8;
+    padding: 0.86rem;
 }
 
 #f_arriba:hover {
@@ -187,12 +173,16 @@ h2{
 }
 
 #f_abaj{
-	font-size: 3.7rem;
+    font-size: 3.7rem;
     color: white;
+    background: rgb(109, 103, 110);
+    opacity: 0.7;
+    font-size: 1.5rem;
+    padding: 1.2rem;
 }
 
 #f_arrib{
-    font-size: 3rem;
+    font-size: 1.7rem;
     color: white;
 }
 
@@ -257,7 +247,7 @@ hr{
 
 .img-divisionB{
     width: 100%;
-    height: 34vh;
+    height: 34vh !important;
 }
 
 .cont-div-textU{
@@ -318,12 +308,10 @@ hr{
 .cont-tarjeta{
     height: 42vh;
     background-color: #F9FAFC;
-    margin: 0 3%;
     border: 1px solid #f6f6f6;
     border-radius: 4px;
     box-shadow: 0px 13px 17px -14px rgba(0,0,0,0.49);
     font-family: 'Raleway', sans-serif;
-    text-align: justify;
 }
 
 .cont-tarje-datos{
@@ -429,7 +417,7 @@ hr{
 
 
 
-			/* footer */
+            /* footer */
 
 
 
@@ -440,9 +428,12 @@ hr{
 }
 
 footer{
-    height: 30vh;
     background: #1B1B1E;
     margin-top: 0;
+    height: 33vh !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .element_foo{
@@ -476,7 +467,7 @@ footer{
 
 .parrafo_foo{
    font-size: 1.4rem; 
-   width: 60%;
+   width: 100%;
    display: inline-block;
    font-family: 'Poppins', sans-serif;
    text-rendering: optimizeLegibility;
@@ -498,7 +489,7 @@ footer{
 .comilla_two{
     position: absolute;
     left: 100%;
-    top: 21.5vh;
+    top: 12.5vh;
 }
 
 .element_foo_one{
@@ -509,9 +500,6 @@ footer{
 .element_foo_two{
     position: relative;
     top: 21vh;
-}
-.cont-footer{
-    height: 30vh;
 }
 
 .copyR span{
@@ -544,12 +532,11 @@ footer{
 
 .cont-footer-tres{
     text-align: justify;
-    display: flex;
-    justify-content: flex-end;  
+    padding-left: 20% !important;
 }
 .copyR{
     margin: 0;
-    height: 7vh;
+    height: 9vh;
     background: #19191c; 
 }
 
@@ -559,9 +546,13 @@ footer{
     padding-left: 11.4% !important;
 }
 
-.tarjetaOne{
-    margin-left: 6.7%;
+.estilos-contTrajetas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap !important;
 }
+
 
 /* Productos */
 
@@ -799,8 +790,8 @@ h1{
 }
 
 .cont-maps{
-    padding-top: 6.7%;
     padding-top: 9%;
+    padding-right: 8% !important;
 }
 
 #contenedor-invitacion-productos{
@@ -824,6 +815,12 @@ h1{
     font-weight: 400;
     font-family: 'Raleway', sans-serif !important;
 }
+
+.image-maps {
+    width: 110% !important;
+    height: 35vh !important;
+}
+
     /*Nosotros*/
 
 .cont-historia{
@@ -831,7 +828,6 @@ h1{
     flex-direction: column;
     text-align: justify !important;
     align-items: center;
-    color
 }
 
 .cont-historia p{
@@ -900,13 +896,15 @@ h1{
 }
 
 .msgUno:hover{
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
     transition-timing-function: ease;
     transition-duration: 400ms; 
 }
 
 .msgDos:hover{
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
     transition-timing-function: ease;
     transition-duration: 400ms; 
 }
@@ -1047,3 +1045,271 @@ h1{
 .boton-nosotros:hover{
     background: #066BD7;    
 }
+
+
+    /* Estilos para dispositivos mobiles */
+
+
+
+    @media (max-width: 575.98px) { 
+    
+    /* Landin page estilos para mobile*/
+
+    footer {
+        height: 40vh !important;
+    }
+
+
+    h1{
+        font-size: 2rem !important;
+    }
+
+    .navbar-brand {
+        padding-top: 0.8125rem;
+    }
+
+    .bx-pager{
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggler{
+        padding: .25rem !important;
+    }
+
+    .navbar-brand {
+        margin-right: 0 !important;
+    }
+        
+    header{
+        width: 101%;
+    }
+
+    .cont-slider {
+        height: 80vh;
+    }
+
+    .cont-divisionB{
+        height: 70vh;
+        padding: 0 5% 0 5% !important;
+        margin-bottom: 6vh;
+        align-items: center;
+    }
+
+    .cont-nosotros-small{
+        height: 65vh;
+        padding: 4vh 5% 4vh 5% !important;
+        align-items: center;
+    }
+
+    .cont-divisionB div{
+        align-items: center;
+    }
+    
+    .cont-div-textD {
+        height: 0%;
+        line-height: 1vh;
+    }
+
+    .cont-div-textT {
+        margin: 10.5% 0;
+    }
+
+    .alto-smoll-view{
+        height: 18vh;
+    }
+
+    .info-tarjeta{
+        position: inherit;
+    }
+    
+    .cont-tarjeta{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        margin: 3vh;
+    }
+
+    .imagen{
+        height: 35vh !important;
+    }
+    
+    .cont-productos{
+        padding: 4vh 5% 0 5% !important;
+        margin-bottom: 6vh;
+    }
+    
+    .datos-experiencia {  
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    .cont-experiencia {
+        height: 120vh;
+        margin-top: 12vh;
+        padding-top: 3vh !important;
+    }
+
+    .datos-experiencia {
+        height: 21vh;
+    }
+
+    .w-100 {
+        height: 8vh;
+    }
+
+    .cont-footer {
+        height: 23vh;
+        background: #1B1B1E;
+    }
+
+    .copyR {
+        height: 14vh;
+        margin-top: 6vh;
+    }
+
+    .copyR span {
+    font-size: 0.95rem;
+    line-height: 13vh;
+    padding-left: 0;
+
+    }
+    
+    .element_foo {
+        padding: 7vh !important;
+    }
+
+    .cont-experiencia {
+        margin-bottom: 16vh;
+    }
+
+    /* Pagina nosotros estilos para mobile*/
+
+
+    .fila-uno-nosotros {
+        margin-top: 0vh !important;
+    }
+
+    .fila-dos-nosotros {
+        margin-top: 0vh !important;
+    }
+
+    .cont-historia {
+        text-align: center !important;
+    }
+    
+    .linea-nosotros {
+        margin-bottom: 0vh;
+    }
+
+    .msgUno, .msgDos{
+        height: 15vh;
+        width: 33vw;
+        padding: 5vh 1%;
+    }
+    
+    .cont-abajo-uno {
+        margin: 0 !important;
+    }
+
+    .margin-smartp{
+        margin-top: 3vh;
+    }
+
+    .fila-tres-nosotros {
+        margin-top: 1vh;
+    }
+
+    .contenedor-nosotros-mision {
+        margin-top: 0vh;
+    }
+
+    .contenedor-nosotros-vision {
+        margin-top: 7vh;
+    }
+
+    .contenedor-nosotros-circulos {
+        margin: 0vh 0 -1vh 0;
+    }
+    
+    .fila-cuatro-nosotros {
+        height: 38vh;
+    }
+
+    .textoDos-nosotros-contacto {
+        font-size: 0.95rem;
+    }
+
+    .boton-nosotros {
+        height: 32px;
+        width: 63%;
+        padding-top: 0.7vh;
+    }
+    
+    /* pagina contacto estilos para mobile*/
+
+
+    .cont-contac {
+        flex-direction: column;
+    
+    }
+
+    #global-contacto{
+        height: auto !important;
+    }
+    
+    .cont-mobile-contacto{
+        padding: 0 4% 0 6%;
+    }
+    
+    .cont-uno {
+        width: 100%;
+        margin-bottom: 5vh;
+        margin-top: 2vh;
+    }
+
+    .cont-dos {
+        margin-left: 0 !important;
+        margin-bottom: 3vh;
+    }
+
+    .cont-dos-col {
+        margin-bottom: 2vh;
+    }
+
+    #email-mobile{
+        width: 100% !important;
+    }
+
+    .cont-maps{
+        padding-left: 0 !important;
+        margin-bottom: 3vh;
+    }
+
+    /* Pagina productos estilos para Mobile */
+
+
+    .cont-princ-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #con-listado-principal {
+        padding: 0 5%;
+    }
+    
+    #button-productos {
+        height: 6vh;
+        font-size: 1.2rem;
+    }
+
+    #cont-listado li {
+        line-height: 5.4vh;
+        height: 5.4vh;
+        padding-left: 0 !important;
+    }
+
+    .cont-tittleUno {
+        border-bottom: 0px;
+    }
+
+    }
